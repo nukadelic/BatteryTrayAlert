@@ -1,7 +1,15 @@
+A system tray application to popup alert message when the battery charger has been disconnected. 
 
-Clone project to your apps folder
+## Installation
 
-### Build 
+Start by clonning the project to your apps folder 
+download the executable file from here : https://github.com/nukadelic/BatteryTrayAlert/releases 
+place in the same directory as the powershell (ps1) script
+
+## Autostart app on system startup  
+right click on `windows_autostart.ps1` and run with powershell - will auto create a windows startup link to the current directory
+
+## Manually Build the app (2 min process)
 
 Create and activate conda environment
 ```sh
@@ -14,12 +22,12 @@ Install dependencies
 pip install pystray pillow psutil pyinstaller
 ```
 
-test run
+test run ( optional ) 
 ```sh
 python app.py
 ```
 
-Create Portable executable ( icon can be --icon=NONE )
+Create Portable executable (icon can be NONE)
 ```sh
 pyinstaller --onefile --windowed --icon=icon.ico --name=Battery app.py
 ```
@@ -29,11 +37,8 @@ Cleanup ( windows )
 copy .\dist\Battery.exe .\Battery.exe && RD /S /Q build && RD /S /Q dist && del Battery.spec
 ```
 
-### Autostart 
-right click on `windows_autostart.ps1` and run with powershell - will auto create a windows startup link to the current directory
 
-
-### Attribution (icon) : 
+**Attribution and tools:**
 + Battery icons created by Freepik - Flaticon : ( https://www.flaticon.com/free-icons/battery ) 
 + base64 png converter : https://www.base64-image.de/
 + convert PNG to ico : https://www.icoconverter.com/
