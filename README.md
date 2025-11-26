@@ -2,9 +2,9 @@ A system tray application to popup alert message when the battery charger has be
 
 ## Installation
 
-Start by clonning the project to your apps folder 
-download the executable file from here : https://github.com/nukadelic/BatteryTrayAlert/releases 
-place in the same directory as the powershell (ps1) script
+- Start by clonning the project to your apps folder 
+- download the executable file from here : https://github.com/nukadelic/BatteryTrayAlert/releases 
+- place in the same directory as the powershell (ps1) script
 
 ## Autostart app on system startup  
 right click on `windows_autostart.ps1` and run with powershell - will auto create a windows startup link to the current directory
